@@ -1,6 +1,15 @@
+//выводим рандомный текст
+
+let text = document.querySelectorAll('.random-text'),
+    container = document.querySelector(".text");
+    // append = document.querySelector('.append');
+let index = Math.trunc(Math.random() * 10),
+    randomText = text[index].textContent;
+console.log(randomText);
+container.append(randomText);
+
 //превращаем текст в набор спанов
-let container = document.querySelector(".text"),
-    arr = container.innerHTML.split('');
+let arr = container.innerHTML.split('');
 
 for (let i = 0; i < arr.length; i++)
 {
@@ -11,8 +20,6 @@ for (let i = 0; i < arr.length; i++)
 }
 
 container.innerHTML = arr.join('');
-
-
 
 let letters = document.querySelectorAll('.letter'),
     p = 0, // отдельный индекс для letters
@@ -69,7 +76,7 @@ function moveHand () {
         second = document.querySelector('.sec'),
         minute = document.querySelector('.min');
 
-    millisec++
+    millisec++;
     if (millisec > 9) {
         sec++;
         millisec = 0;
@@ -80,9 +87,13 @@ function moveHand () {
     minute.textContent = min;
     second.textContent = sec;
     millisecond.textContent = millisec;
-};
+}
+
+
+
 
 
 
 //выводить в реальном времени значение за/мин
 //попап с резултатами
+//добавить рандомный текст
