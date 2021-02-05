@@ -1,7 +1,7 @@
 # RATATAPE
 ## Страница, на которой вы можете проверить свою скорость печати
 
-![Внешний вид сайта](https://i.ibb.co/SVkGbfY/ratatape.png "Внешний вид сайта")
+![Внешний вид сайта](https://i.ibb.co/fpL8ggD/ratatape.png "Внешний вид сайта")
 ![](https://i.ibb.co/XS8ZnvG/54249584-e817-4d7e-9e62-a38a9bd28a15-2.gif)
 
 ____
