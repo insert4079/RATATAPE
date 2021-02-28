@@ -34,20 +34,32 @@ body {
 
 .timer {
   display: flex;
-  width: 20%;
   justify-content: center;
+}
+
+.timer-and-result {
+  width: 30%;
   background-color: #fff;
   padding: 50px;
   border-radius: 0 10px 10px 0;
+}
+
+.result div {
+  margin-top: 10px;
+  font-size: 1.4rem;
 }
 
 .header {
   height: 10vh;
   display: flex;
   align-items: center;
+}
+
+.name {
   font-size: 35px;
   color: white;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .text {

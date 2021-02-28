@@ -1,11 +1,10 @@
 //выводим рандомный текст
 
 let text = document.querySelectorAll('.random-text'),
-    container = document.querySelector(".text");
-    // append = document.querySelector('.append');
-let index = Math.trunc(Math.random() * 10),
+    container = document.querySelector(".text"),
+    index = Math.trunc(Math.random() * 10),
     randomText = text[index].textContent;
-console.log(randomText);
+
 container.append(randomText);
 
 //превращаем текст в набор спанов
@@ -58,9 +57,16 @@ window.addEventListener('keydown', function(e) { //подумать как мо�
         else if (letters[letters.length - 1].classList.contains('correct')) { //останавливает интервал, если последний символ correct
             clearInterval(interval);
             let resultSpeed = (letters.length / (min * 60 + sec) * 60).toFixed(0),
-                mistakes = document.querySelectorAll('.incorrect').length;
+                mistakes = document.querySelectorAll('.incorrect').length,
+                time = document.querySelector('.time'),
+                speed = document.querySelector('.speed'),
+                mistakesRes = document.querySelector('.mistakes');
+
             mistakes = ((mistakes / letters.length) * 100).toFixed(0);
-            result.textContent = `Ваш результат: ${min} мин ${sec} сек. ${resultSpeed} зн/мин. Процент ошибок: ${mistakes}`;
+            time.textContent = `Результат: ${min} мин ${sec} сек.`;
+            speed.textContent = `Скорость: ${resultSpeed} зн/мин.`;
+            mistakesRes.textContent = `Ошибок: ${mistakes}%`;
+
         }
     } 
 });
