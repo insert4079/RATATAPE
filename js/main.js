@@ -1,8 +1,14 @@
 //выводим рандомный текст
 
 let text = document.querySelectorAll('.random-text'),
+<<<<<<< HEAD
     container = document.querySelector(".text"),
     index = Math.trunc(Math.random() * 10),
+=======
+    container = document.querySelector(".text");
+
+let index = Math.trunc(Math.random() * 10),
+>>>>>>> 0384d114ddc9500ed46e5de29d645c244305d815
     randomText = text[index].textContent;
 
 container.append(randomText);
@@ -94,12 +100,3 @@ function moveHand () {
     second.textContent = sec;
     millisecond.textContent = millisec;
 }
-
-
-
-
-
-
-//выводить в реальном времени значение за/мин
-//попап с резултатами
-//добавить рандомный текст
