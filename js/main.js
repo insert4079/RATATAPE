@@ -3,9 +3,6 @@
 let text = document.querySelectorAll('.random-text'),
     container = document.querySelector(".text"),
     index = Math.trunc(Math.random() * 10),
-    container = document.querySelector(".text");
-
-let index = Math.trunc(Math.random() * 10),
     randomText = text[index].textContent;
 
 container.append(randomText);
