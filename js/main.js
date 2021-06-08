@@ -3,6 +3,10 @@
 let text = document.querySelectorAll('.random-text'),
     container = document.querySelector(".text"),
     index = Math.trunc(Math.random() * 10),
+<<<<<<< HEAD
+=======
+    container = document.querySelector(".text"),
+>>>>>>> 88fb7f2822eb6ac6e79c39ef1c602328a2076e0f
     randomText = text[index].textContent;
 
 container.append(randomText);
